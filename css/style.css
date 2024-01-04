@@ -1,0 +1,739 @@
+
+body {
+    font-weight: 400;
+    position: relative;
+}
+
+html,body {
+      width: 100%;
+     overflow-x: hidden;
+  }
+
+.post-masonry img {
+    width: 100%;
+    display: block;
+}
+
+
+
+body {
+  background-color: #111111;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+
+/* Typography
+------------------------------------- */
+h1,h2,h3,h4,h5 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 62px;
+  line-height: 72px;
+}
+
+h2 {
+  color: #323232;
+  font-size: 26px;
+  line-height: 42px;
+  letter-spacing: 1px;
+  padding-bottom: 12px;
+}
+
+h3 {
+  color: #ffa400;
+  font-size: 16px;
+  letter-spacing: 26px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  color: #ffa400;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 16px;
+  letter-spacing: 0.9px;
+  line-height: 32px;
+}
+
+
+
+/* All Section styles
+------------------------------------- */
+#testimonial, #blog, #counter, #contact {
+   	padding-top: 120px;
+  	padding-bottom: 120px;
+}
+
+#about h3 {
+  	padding-bottom: 12px;
+}
+
+.parallax-section {
+  	background-attachment: fixed !important;
+  	background-size: cover !important;
+}
+
+
+/* navigation styles
+/* ========================================== */
+.navbar-default {
+  background: rgba(92, 236, 255, 0.13);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 10px;
+  border: 1px solid rgba(92, 236, 255, 0.164);
+    margin: 0 !important;
+  }
+.navbar-default .navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  }
+.navbar-default li {
+  margin: 15px 20px;
+}
+.navbar-default .navbar-nav li a {
+    color: #303030;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px;
+  }
+.navbar-default .navbar-nav li a:hover {
+    color: #ffa400;
+  }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #303030;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffa400;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+     border: none;
+     padding-top: 12px;
+  }
+.navbar-default .navbar-toggle .icon-bar {
+    background: #ffa400;
+    border-color: transparent;
+  }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { 
+  background-color: transparent;
+}
+
+
+
+/* home section styles
+/* ========================================== */
+#home {
+  background: url('../images/mitnaka2.jpg') 50% 0 repeat-y fixed; 
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#home .btn-danger {
+  background: #ffa400 !important;
+  margin-right: 20px;
+}
+
+#home .btn-danger:hover {
+  background: #ffc400 !important;
+}
+
+#home .btn {
+  background: #000000;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 14px 52px;
+  margin-top: 40px;
+  transition: all 0.4s ease-in-out;
+}
+
+#home .btn:hover {
+  background: #ffa400;
+}
+
+
+/* testimonial section styles
+/* ========================================== */
+#testimonial .item {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding-bottom: 62px;
+}
+
+#testimonial .item img {
+  display: inline-block;
+}
+
+/* about section styles
+/* ========================================== */
+#about .container {
+  	width: 100%;
+  	padding: 0px;
+  	margin: 0px;
+}
+
+#about .col-md-6 {
+	padding: 0;
+}
+
+#about .about-des {
+  	padding: 65px;
+}
+
+#about .about-des h3 {
+	font-size: 26px;
+}
+
+#about .about-des h4 {
+	font-size: 20px;
+}
+
+#about .about-des p {
+	font-size: 16px;
+	line-height: 32px;
+}
+
+
+/* blog section styles
+/* ========================================== */
+#blog h2, #blog h4 {
+  text-align: center;
+}
+
+#blog h2 {
+  padding-bottom: 12px;
+  font-size: 32px;
+}
+
+#blog h4 {
+  padding-bottom: 32px;
+  letter-spacing: 0.9px;
+}
+
+#blog p {
+	padding-top: 10px;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+#blog .blog-wrapper {
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#blog .blog-wrapper h3 a {
+  color: #000000;
+}
+
+
+/* Counter section styles
+/* ========================================== */
+#counter {
+   background: url('../images/counter-bg.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+#counter .counter-number {
+  color: #ffa400;
+  font-size: 32px;
+}
+
+#counter .counter-text {
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+
+/* contact section styles
+/* ========================================== */
+#contact {
+  background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+#contact .form-control {
+  background: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+  border-radius: 0px;
+  box-shadow: none;
+  margin-bottom: 22px;
+  transition: all 0.4s ease-in-out;
+  padding: 10px;
+  height: auto;
+}
+
+#contact input[type="submit"] {
+  background: #000000;
+  border:none;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+#contact input[type="submit"]:hover {
+  background: #ffa400;
+}
+
+.form-control::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #ffffff;
+}
+.form-control::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+#contact .contact-detail {
+  background: rgba(250,250,250,0.75);
+  padding: 34px 10px 34px 60px;
+}
+
+#contact .contact-detail h2 {
+  padding-bottom: 28px;
+}
+
+#contact .contact-detail div {
+  padding-bottom: 10px;
+}
+
+
+/* footer section styles
+/* ========================================== */
+footer {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+footer p {
+  padding-right: 40px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #606060;
+}
+
+footer a:hover {
+  color: #ffa400;
+  text-decoration: none;
+}
+
+.link-list a {
+  color: #606060;
+  display: block;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.social-icon {
+  padding: 0;
+  margin: 0;
+}
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+}
+.social-icon li a {
+  background: #3c3c3c;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  margin-right: 2px;
+}
+.social-icon li a:hover {
+  background: #ffa400;
+}
+
+
+
+@media (max-width: 1280px) {
+	#about .about-des {
+		padding: 40px;
+	}
+	#about .about-des h3 {
+		font-size: 20px;
+	}
+	
+	#about .about-des h4 {
+		font-size: 16px;
+	}
+	
+	#about .about-des p {
+		font-size: 13px;
+		line-height: 24px;
+	}
+}
+/* mobile responsive section styles
+/* ========================================== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 53px;
+  }
+  #counter .counter-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  #home h5 {
+    font-size: 11px;
+  }
+  #home .btn {
+    display: inline-block;
+    padding: 14px 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  #home h5 {
+    font-size: 9px;
+  }
+}
+/* shimmer */
+
+:root {
+  --glow-hue: 321deg; /* cxan change color here*/
+  --shadow-hue: 180deg;
+  --spring-easing: linear(
+  0, 0.002, 0.01 0.9%, 0.038 1.8%, 0.156, 0.312 5.8%, 0.789 11.1%, 1.015 14.2%,
+  1.096, 1.157, 1.199, 1.224 20.3%, 1.231, 1.231, 1.226, 1.214 24.6%,
+  1.176 26.9%, 1.057 32.6%, 1.007 35.5%, 0.984, 0.968, 0.956, 0.949 42%,
+  0.946 44.1%, 0.95 46.5%, 0.998 57.2%, 1.007, 1.011 63.3%, 1.012 68.3%,
+  0.998 84%, 1
+);
+  --spring-duration: 1.33s;
+}
+@property --shimmer {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 33deg;
+}
+
+@keyframes shimmer {
+  0% {
+      --shimmer: 0deg;
+  }
+  100% {
+      --shimmer: 360deg;
+  }
+}
+
+@keyframes shine {
+  0% {
+      opacity: 0;
+  }
+  15% {
+      opacity: 1;
+  }
+  55% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+@keyframes text {
+  0% {
+      background-position: 100% center;
+  }    
+  100% {
+      background-position: -100% center;
+  }    
+}
+
+button {
+  font-weight: 600;
+  /*     background-image: linear-gradient(90deg, #fcecfe, #fbf6e7, #e6fcf5); */
+  
+
+  
+  padding: 1.2em 5em;
+  position: relative;
+  isolation: isolate;
+ /* border-radius: 0.66em; */
+  scale: 1;
+  transition: all var(--spring-duration) var(--spring-easing);
+  opacity: 0; /* Set initial opacity to 0 for the fade-in effect */
+  animation: fadeIn 1s ease-in-out 0.5s forwards; /* Apply fade-in animation with a 0.5s delay */
+  margin-top: 20px;
+  
+
+  background: rgba(92, 236, 255, 0.13);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 10px;
+  border: 1px solid rgba(92, 236, 255, 0.164);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+button:hover:not(:active),
+button.active {
+  transition-duration: calc(var(--spring-duration)*0.5);
+  scale: 1.2;
+  box-shadow: 0 4px 8px -2px hsl(var(--glow-hue) 50% 20% / 50%), inset 0 0 0 transparent;
+}
+button:active {
+  scale: 1.1;
+  transition-duration: calc(var(--spring-duration)*0.5);
+}
+
+.shimmer {
+  position: absolute;
+  inset: -40px;
+  border-radius: inherit;
+  mask-image: conic-gradient(
+      from var(--shimmer, 0deg),
+      transparent 0%,
+      transparent 10%,
+      black 36%,
+      black 45%,
+      transparent 50%,
+      transparent 60%,
+      black 85%,
+      black 95%,
+      transparent 100%
+  );
+  mask-size: cover;
+  mix-blend-mode: plus-lighter;
+  animation: shimmer 1s linear infinite both;
+}
+button:hover .shimmer::before,
+button:hover .shimmer::after,
+button.active .shimmer::before,
+button.active .shimmer::after {
+  opacity: 1;
+  animation: shine 1.2s ease-in 1 forwards;
+}
+.shimmer::before,
+.shimmer::after {
+  transition: all 0.5s ease;
+  opacity: 0;
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  mix-blend-mode: color;
+  inset: 40px;
+  pointer-events: none;
+}
+.shimmer::before {
+  box-shadow: 0 0 3px 2px hsl(var(--glow-hue) 20% 95%),
+      0 0 7px 4px hsl(var(--glow-hue) 20% 80%),
+      0 0 13px 4px hsl(var(--glow-hue) 50% 70%),
+      0 0 25px 5px hsl(var(--glow-hue) 100% 70%);
+  z-index: -1;
+}
+
+.shimmer::after {
+  box-shadow: inset 0 0 0 1px hsl(var(--glow-hue) 70% 95%),
+      inset 0 0 2px 1px hsl(var(--glow-hue) 100% 80%),
+      inset 0 0 5px 2px hsl(var(--glow-hue) 100% 70%);
+  z-index: 2;
+}
+
+button .text {
+  color: rgba(255, 97, 197, 0.515);
+  background-clip: text;
+  background-color: var(--bg);
+  background-image: linear-gradient(120deg, transparent, hsla(var(--glow-hue),100%,80%,0.66) 40%, hsla(var(--glow-hue),100%,90%,.9) 50%, transparent 52%);
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  background-position: center 200%;
+}
+
+button:hover .text,
+button.active .text {
+  animation: text .66s ease-in 1 both;
+}
+
+.logo {
+  opacity:0;
+  text-align: center;
+  width: 80%; /* Adjust the width as needed */
+  margin: auto;
+  position: relative;
+  user-select: none;
+  margin-top: 130px; /* Adjust the margin-top value as needed */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 100%; /* Take the full width on smaller screens */
+  }
+}
+
+.logo b {
+  font: 400 80px 'Bebas Neue'; /* Adjust the font size as needed */
+  line-height: 110px;
+  text-shadow: 0 0px 30px, 0 0 2px, 0 0 0.8em #ff1493, 0 0 0.4em #ff1493, 0 0 0.1em #ff1493, 0 8px 2px #000;
+  color: #ffdf96;
+}
+
+.logo b span {
+  opacity: 100;
+  animation: blink linear infinite 2s;
+}
+
+.logo b span:nth-of-type(2) {
+  animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: #555; /* Adjusted blink color to a darker gray */
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #555; /* Adjusted blink color to a darker gray */
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #555; /* Adjusted blink color to a darker gray */
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+/* Specific div with class .logo wow fadeInDown */
+.logo.wow.fadeInDown b {
+  opacity: 100;
+  color: #003366; /* Adjusted color to a darker blue */
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff8c94, 0 0 0.5em #ff8c94, 0 0 0.1em #ff8c94, 0 10px 3px #000; /* Adjusted text-shadow color */
+  
+}
+
+
+/* card */
+@keyframes fadeInWithDelay {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the logo */
+.logo {
+  animation: fadeInWithDelay 1s ease-in-out 0.5s forwards;
+}
