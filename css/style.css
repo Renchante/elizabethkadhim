@@ -22,20 +22,7 @@ body {
   overflow-x: hidden;
 }
 
-.bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  width: 200%;
-  height: 200vh;
-  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-  background-repeat: repeat;
-  animation: bg-animation .2s infinite;
-  opacity: .9;
-  visibility: visible;
-}
+
 
 @keyframes bg-animation {
     0% { transform: translate(0,0) }
@@ -165,7 +152,7 @@ p {
 /* home section styles
 /* ========================================== */
 #home {
-  background: url('../images/mitnaka2.jpg') 50% 0 repeat-y fixed; 
+  background: url('../images/dana-andreea-gheorghe-g5A-uqyX_hY-unsplash.jpg') 50% 0 repeat-y fixed; 
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -632,7 +619,7 @@ button.active .shimmer::after {
 }
 
 button .text {
-  color: rgba(255, 97, 197, 0.515);
+  color: rgba(255, 97, 197, 0.799);
   background-clip: text;
   background-color: var(--bg);
   background-image: linear-gradient(120deg, transparent, hsla(var(--glow-hue),100%,80%,0.66) 40%, hsla(var(--glow-hue),100%,90%,.9) 50%, transparent 52%);
