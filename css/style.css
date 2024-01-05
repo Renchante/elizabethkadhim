@@ -737,3 +737,8 @@ button.active .text {
 .logo {
   animation: fadeInWithDelay 1s ease-in-out 0.5s forwards;
 }
+
+
+body::-webkit-scrollbar { 
+  display: none;
+}
