@@ -1,154 +1,259 @@
-body {background-color: rgb(0, 0, 0);}
 
 .carousel {
-    position: relative;
-    z-index: 1;
-    height: 100vh;
-    overflow: hidden;
-    pointer-events: none;
+position: relative;
+z-index: 1;
+height: 100vh;
+overflow: hidden;
+pointer-events: none;
 }
 
 .carousel-item {
-    --items: 10;
-    --width: clamp(150px, 30vw, 300px);
-    --height: clamp(200px, 40vw, 400px);
-    --x: calc(var(--active) * 800%);
-    --y: calc(var(--active) * 200%);
-    --rot: calc(var(--active) * 120deg);
-    --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
+--items: 10;
+--width: clamp(150px, 30vw, 300px);
+--height: clamp(200px, 40vw, 400px);
+--x: calc(var(--active) * 800%);
+--y: calc(var(--active) * 200%);
+--rot: calc(var(--active) * 120deg);
+--opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
 
-    overflow: hidden;
-    position: absolute;
-    z-index: var(--zIndex);
-    width: var(--width);
-    height: var(--height);
-    margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
-    top: 50%;
-    left: 50%;
-    user-select: none;
-    transform-origin: 0% 100%;
-    pointer-events: all;
-    transform: translate(var(--x), var(--y)) rotate(var(--rot));
-    transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1), border-color 0.8s cubic-bezier(0, 0.02, 0, 1);
-    border: 2px solid transparent;
-    border-radius: 10px;
-    background-clip: padding-box;
-    animation: rgbAnimation 5s infinite linear;
+overflow: hidden;
+position: absolute;
+z-index: var(--zIndex);
+width: var(--width);
+height: var(--height);
+margin: calc(var(--height) * -0.5) 0 0 calc(var(--width) * -0.5);
+top: 50%;
+left: 50%;
+user-select: none;
+transform-origin: 0% 100%;
+pointer-events: all;
+transform: translate(var(--x), var(--y)) rotate(var(--rot));
+transition: transform 0.8s cubic-bezier(0, 0.02, 0, 1), border-color 0.8s cubic-bezier(0, 0.02, 0, 1);
+border: 2px solid transparent;
+border-radius: 10px;
+background-clip: padding-box;
 }
-
-@keyframes rgbAnimation {
-    0% {
-        border-color: rgb(255, 0, 0);
-    }
-    25% {
-        border-color: rgb(0, 255, 0);
-    }
-    50% {
-        border-color: rgb(0, 0, 255);
-    }
-    75% {
-        border-color: rgb(255, 255, 0);
-    }
-    100% {
-        border-color: rgb(255, 0, 255);
-    }
-}
-
 
 
 .carousel-item .carousel-box {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-    opacity: var(--opacity);
-    font-family: 'Orelo-sw-db', serif;
+position: absolute;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+opacity: var(--opacity);
+font-family: 'Orelo-sw-db', serif;
 }
 
 .carousel-item .carousel-box:before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .5));
+content: '';
+position: absolute;
+z-index: 1;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #11111114; 
 }
 .carousel-item .title {
-    position: absolute;
-    z-index: 1;
-    color: #fff;
-    bottom: 20px;
-    left: 20px;
-    transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-    font-size: clamp(20px, 3vw, 30px);
-    text-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+position: absolute;
+z-index: 1;
+color: #fff;
+bottom: 20px;
+left: 20px;
+transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+font-size: clamp(20px, 3vw, 30px);
+text-shadow: 0 4px 4px rgba(0, 0, 0, .1);
 }
 .carousel-item .num {
-    position: absolute;
-    z-index: 1;
-    color: #fff;
-    top: 10px;
-    left: 20px;
-    transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
-    font-size: clamp(20px, 10vw, 80px);
+position: absolute;
+z-index: 1;
+color: #fff;
+top: 10px;
+left: 20px;
+transition: opacity 0.8s cubic-bezier(0, 0.02, 0, 1);
+font-size: clamp(20px, 10vw, 80px);
 }
 .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
+width: 100%;
+height: 100%;
+object-fit: cover;
+pointer-events: none;
 }
 .layout {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+position: absolute;
+z-index: 0;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+pointer-events: none;
 }
 .layout:before {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 90px;
-    width: 10px;
-    height: 100%;
-    border: 1px solid #fff;
-    border-top: none;
-    border-bottom: none;
-    opacity: 0.15;
+content: '';
+position: absolute;
+z-index: 1;
+top: 0;
+left: 90px;
+width: 10px;
+height: 100%;
+border: 1px solid #fff;
+border-top: none;
+border-bottom: none;
+opacity: 0.15;
+}
+.carousel-item .carousel-box .card {
+
+font-size: 12px !important; /* Adjust the font size as needed */
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transform-style: preserve-3d;
+color:aliceblue;
+background-color: #111111;
+
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: transform 0.6s;
+transform: rotateY(0);
+}
+
+.carousel-item .carousel-box .card .front,
+.carousel-item .carousel-box .card .back {
+position: absolute;
+width: 100%; 
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transform-style: preserve-3d;
+}
+
+.carousel-item .carousel-box .card .back {
+transform: rotateY(180deg);
+}
+
+.carousel-item .carousel-box.flipped .card {
+transform: rotateY(180deg);
 }
 
 
-.cursor {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    --size: 40px;
-    width: var(--size);
-    height: var(--size);
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, .2);
-    margin: calc(var(--size) * -0.5) 0 0 calc(var(--size) * -0.5);
-    transition: transform 0.85s cubic-bezier(0, 0.02, 0, 1);
-    display: none;
-    pointer-events: none;
-}
-@media (pointer: fine) {
-    .cursor {
-        display: block;
-   }
-}
-.cursor2 {
-    --size: 2px;
-    transition-duration: 0.7s;
+.carousel-item .carousel-box .card {
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: transform 0.6s;
+transform: rotateY(0);
 }
 
+.carousel-item .carousel-box .card .front,
+.carousel-item .carousel-box .card .back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transform-style: preserve-3d;
+}
+
+.carousel-item .carousel-box .card .back {
+transform: rotateY(180deg);
+}
+
+.carousel-item.flipped .carousel-box .card {
+transform: rotateY(180deg);
+}
+
+.carousel-item .carousel-box .card .back-content {
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+color: aliceblue;
+font-size: 16px;
+line-height: 1.6;
+}
+
+.carousel-item .carousel-box .card .back-content p {
+margin: 0;
+}
+
+
+.carousel-item .carousel-box .card {
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transition: transform 0.6s;
+transform: rotateY(0);
+}
+
+.carousel-item .carousel-box .card .front,
+.carousel-item .carousel-box .card .back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transform-style: preserve-3d;
+}
+
+.carousel-item .carousel-box .card .back {
+transform: rotateY(180deg);
+}
+
+.carousel-item.flipped .carousel-box .card {
+transform: rotateY(180deg);
+}
+
+/* Responsive Styles */
+
+
+@media (max-width: 767px) {
+    .carousel {
+        /* Adjust the width or max-width for smaller screens */
+        width: 100%;
+        max-width: 480px; /* You can adjust this value */
+    }
+
+    .carousel-item {
+        /* Adjust the width and height for smaller screens */
+        width: 50%; /* Set to 100% to make it full-width on smaller screens */
+        max-width: none; /* Remove any max-width constraints */
+        height: 40%; /* Set to auto or adjust as needed */
+        max-height: none;
+    }
+
+    .carousel-box {
+        /* Adjust styles for the carousel boxes on smaller screens */
+        /* For example, you can increase the font size, padding, or any other properties */
+        font-size: 8px !important;
+        padding: 10px;
+        
+    }
+    .carousel-item .carousel-box .card .back-content {
+        padding: 10px;
+        font-size: 3px !important; /* Adjust the font size as needed */
+      }
+}
+@media (max-width: 767px) {
+    .back p {
+        /* Adjust font size for smaller screens */
+        font-size: 12px !important; /* Adjust the font size as needed */
+        line-height: 30px;
+    }
+}

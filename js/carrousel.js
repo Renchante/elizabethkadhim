@@ -82,6 +82,9 @@ const handleMouseUp = () => {
   isDown = false
 }
 
+function flipCard(element) {
+  element.classList.toggle('flipped');
+}
 /*--------------------
 Listeners
 --------------------*/
@@ -92,3 +95,6 @@ document.addEventListener('mouseup', handleMouseUp)
 document.addEventListener('touchstart', handleMouseDown)
 document.addEventListener('touchmove', handleMouseMove)
 document.addEventListener('touchend', handleMouseUp)
+
+
+

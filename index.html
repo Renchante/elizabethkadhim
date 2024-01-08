@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="css/glitch.css">
 	<link rel="stylesheet" href="css/carrousel.css">
 	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/shimmer.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
 
 
@@ -94,7 +95,7 @@
             
 			<div class="col-md-6 col-sm-12">
 				<div class="about-des">
-					<p>LIFE SO SHIT! LIFE SO SHIT ALWAYS! LIFE SO SHIT ALWAYS! </p>
+					<p style="color:aliceblue">LIFE SO SHIT! LIFE SO SHIT ALWAYS! LIFE SO SHIT ALWAYS! </p>
 				</div>
 			</div>
 
@@ -105,7 +106,7 @@
 			<div class="col-md-6 col-sm-12">
 				<div class="about-des">
 
-					<p>LIFE SO SHIT! LIFE SO SHIT ALWAYS! LIFE SO SHIT ALWAYS! </p>
+					<p style="color:aliceblue">LIFE SO SHIT! LIFE SO SHIT ALWAYS! LIFE SO SHIT ALWAYS! </p>
 				</div>
 			</div>
             
@@ -127,10 +128,19 @@
 
 	<div class="carousel">
 		<div class="carousel-item">
-			<div class="carousel-box">
-				<div class="title">Paris</div>
-				<div class="num">01</div>
-				<img src="https://media.istockphoto.com/id/949299844/it/foto/vista-prospettica-dellesterno-delledificio-contemporaneo.jpg?s=612x612&w=0&k=20&c=_DR1aRHuTEV3EYBJo1ZXq1pF4SgwB9EVWQLaBj4sC5g=" />
+			<div class="carousel-box" onclick="flipCard(this)">
+				<div class="card">
+					<div class="front">
+						<!-- Front content -->
+						<div class="title">Paris</div>
+						<div class="num">01</div>
+						<img src="https://media.istockphoto.com/id/949299844/it/foto/vista-prospettica-dellesterno-delledificio-contemporaneo.jpg?s=612x612&w=0&k=20&c=_DR1aRHuTEV3EYBJo1ZXq1pF4SgwB9EVWQLaBj4sC5g=" />
+					</div>
+					<div class="back">
+						<!-- Back content -->
+						<p style="color:aliceblue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec erat enim. Nullam sapien nisi, vestibulum id ex sit amet, cursus feugiat eros. Pellentesque vestibulum semper molestie. Nam ac tellus sit amet nisi iaculis ultrices ut vitae dui. Vestibulum a posuere turpis. Proin lectus orci, pellentesque et mattis in, cursus sit amet velit. Nulla gravida sollicitudin porttitor. Cras sed neque finibus mauris varius interdum. Nulla facilisi.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 

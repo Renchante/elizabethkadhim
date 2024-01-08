@@ -6,6 +6,7 @@
   justify-content: center;
   text-align: center;
   background-color: #00000000;
+  user-select: none;
 }
 
 .glitch {
