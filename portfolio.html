@@ -11,10 +11,9 @@
 </head>
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,800" rel='stylesheet' type='text/css'>
 <div class="tools">
-
     <div class="settings">
         <button id="view">
-            <span class="text" >SWITCH VIEW</span>
+            <span class="text">SWITCH VIEW</span>
             <span class="shimmer" ></span>
         </button>
     </div>
@@ -35,33 +34,7 @@
     </div>
     <div class="product">
     <div class="product-img">
-        <img src="https://placeimg.com/400/650/nature">
-    </div>
-    <div class="product-content">
-        <h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti maxime doloribus sint, repudiandae.
-        <small>Consectetur Adipisicing</small>
-        </h3>
-        <p class="product-text price">$9.99</p>
-        <p class="product-text genre">DVD Rental</p>
-    </div>
-    </div>
-    <div class="product">
-    <div class="product-img">
-        <img src="https://placeimg.com/400/650/tech">
-    </div>
-    <div class="product-content">
-        <h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        <small>Consectetur Adipisicing</small>
-        </h3>
-        <p class="product-text price">$9.99</p>
-        <p class="product-text genre">DVD Rental</p>
-    </div>
-    </div>
-    <div class="product">
-    <div class="product-img">
-        <img src="https://placeimg.com/400/650/sepia">
+        <img src="https://placeimg.com/400/650/animals">
     </div>
     <div class="product-content">
         <h3>
@@ -72,10 +45,32 @@
         <p class="product-text genre">DVD Rental</p>
     </div>
     </div>
-</div>
-
-
-<div class="products products-table">
+    <div class="product">
+    <div class="product-img">
+        <img src="https://placeimg.com/400/650/animals">
+    </div>
+    <div class="product-content">
+        <h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        <small>Consectetur Adipisicing</small>
+        </h3>
+        <p class="product-text price">$9.99</p>
+        <p class="product-text genre">DVD Rental</p>
+    </div>
+    </div>
+    <div class="product">
+    <div class="product-img">
+        <img src="https://placeimg.com/400/650/animals">
+    </div>
+    <div class="product-content">
+        <h3>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        <small>Consectetur Adipisicing</small>
+        </h3>
+        <p class="product-text price">$9.99</p>
+        <p class="product-text genre">DVD Rental</p>
+    </div>
+    </div>
     <div class="product">
     <div class="product-img">
         <img src="https://placeimg.com/400/650/animals">
@@ -98,7 +93,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti maxime doloribus sint, repudiandae.
         <small>Consectetur Adipisicing</small>
         </h3>
-        <p class="product-text price" style="">$9.99</p>
+        <p class="product-text price">$9.99</p>
         <p class="product-text genre">DVD Rental</p>
     </div>
     </div>
@@ -128,9 +123,26 @@
         <p class="product-text genre">DVD Rental</p>
     </div>
     </div>
-</div>
     
+    
+</div>
 
+
+    
+<div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-left">
+        <img id="modalImage" src="" alt="Product Image">
+      </div>
+      <div class="modal-right">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <p class="price" id="modalPrice"></p>
+        <ul id="modalParagraphList"></ul>
+      </div>
+    </div>
+  </div>
 <!-- Include your app.js file -->
 <script src="aaa/app.js"></script>
 <script src="js/app.js"></script>

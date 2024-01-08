@@ -61,12 +61,13 @@ button {
   scale: 1;
   transition: all var(--spring-duration) var(--spring-easing);
 
-  background: rgba(92, 236, 255, 0.13);
+  background: rgba(30, 30, 30, 0.9);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0);
   backdrop-filter: blur( 3.5px );
   -webkit-backdrop-filter: blur( 3.5px );
   border-radius: 10px;
-  border: 1px solid rgba(92, 236, 255, 0.164);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
 }
 
 
