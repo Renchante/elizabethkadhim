@@ -9,7 +9,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -25,6 +24,29 @@
 
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyAFCbD4OmruJgo4UpGXfnm1fJRJD0HxUZo",
+		  authDomain: "portfolio-website-a3c82.firebaseapp.com",
+		  projectId: "portfolio-website-a3c82",
+		  storageBucket: "portfolio-website-a3c82.appspot.com",
+		  messagingSenderId: "634748475827",
+		  appId: "1:634748475827:web:8e1d57c2296d671814d3c6",
+		  measurementId: "G-EPJEDVDE9M"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	  </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
