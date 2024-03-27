@@ -59,7 +59,9 @@ $(document).ready(function() {
       was quite simple but creating the database to store users answers was difficult. I used Firebase realtime database\
       to get real-time updates and store user's answers. This allowed us to give the first trivia winners some prizes.\
       The themeing for this website was very simple since I had to follow the design and color theme made already by Sims.",
-      image: "path/to/product2.jpg",
+      image: "images/sims_web.png",
+      width: 300, 
+      height: 200,
       paragraph: [],
       github: "https://github.com/Renchante/ics4u-project-management",
     },
