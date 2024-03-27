@@ -16,4 +16,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_WEBSITE_A3C82 }}'
           channelId: live
-          projectId: portfolio-website-a3c82
+          projectId: elizabethkadhim
